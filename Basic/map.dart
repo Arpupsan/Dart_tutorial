@@ -1,41 +1,41 @@
 // map
 // MapEntry<K,V>
 void main() {
-  var map = {"key": "value", "key2": "vallue2"};
+  var map = {"key": "value", "key2": "value2"};
   Map<int, String> map1 = {1: "value1", 2: "value2"};
 
-  Map<String, String> trafficklight = Map();
-  trafficklight['red'] = 'stop';
-  trafficklight['yellow'] = 'go?';
-  trafficklight['green'] = 'go!';
+  Map<String, String> trafficLight = Map();
+  trafficLight['red'] = 'stop';
+  trafficLight['yellow'] = 'go?';
+  trafficLight['green'] = 'go!';
 
-  trafficklight['yellow'] = 'wait';
-  print(trafficklight['yellow']);
+  trafficLight['yellow'] = 'wait';
+  print(trafficLight['yellow']);
 
-  print(trafficklight.containsKey('red'));
-  trafficklight.update('green', (value) => 'top green');
-  trafficklight.remove('red');
-  print(trafficklight.length);
-  print(trafficklight.isEmpty);
-  //trafficklight.clear()
+  print(trafficLight.containsKey('red'));
+  trafficLight.update('green', (value) => 'top green');
+  trafficLight.remove('red');
+  print(trafficLight.length);
+  print(trafficLight.isEmpty);
+  //trafficLight.clear()
 
   print(map);
-  print(trafficklight);
+  print(trafficLight);
 
   print('\n');
 
-  for (var key in trafficklight.keys) {
+  for (var key in trafficLight.keys) {
     print(key);
   }
 
   print('\n');
 
-  for (var value in trafficklight.values) {
+  for (var value in trafficLight.values) {
     print(value);
   }
 
   print('\n');
 
-  trafficklight.forEach((key, value) =>
+  trafficLight.forEach((key, value) =>
     print("key: $key, value: $value"));
 }
