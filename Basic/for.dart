@@ -2,7 +2,7 @@
 
 void main() {
 
-  for (int i = 0; i < 6; i++ ) {
+  for (int i = 0; i<6; i++ ) {
     print("Helo User $i");
   }
 
